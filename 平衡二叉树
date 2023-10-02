@@ -1,0 +1,7 @@
+平衡二叉树（Balanced Binary Tree）又称AVL树
+1.它是一棵空树或它的左右两个子树的高度差的绝对值不超过1；
+2.并且左右两个子树都是一棵平衡二叉树。
+平衡因子：二叉树的每个节点的左子树减去右子树，1或0或-1
+
+参考链接：https://www.cnblogs.com/skywang12345/p/3576969.html
+https://blog.csdn.net/guoweimelon/article/details/50904302
