@@ -1,0 +1,37 @@
+希尔排序（Shell Sort）：插入排序算法，通过对原始序列进行分组进行排序。
+
+运行过程：
+1.选择一个增量序列t1，t2，…，tk，其中ti>tj，tk=1；
+2.按增量序列个数k，对序列进行k 趟排序；
+3.每趟排序，根据对应的增量ti，将待排序列分割成若干长度为m 的子序列，分别对各子表进行直接插入排序。仅增量因子为1 时，整个序列作为一个表来处理，表长度即为整个序列的长度。
+
+10/2 = 5
+○ × △ □ √ ○ × △ □ √
+5/2 = 2
+○ × ○ × ○ × ○ × ○ ×
+2/2 = 1
+○ ○ ○ ○ ○ ○ ○ ○ ○ ○
+
+function shellSort(arr) {
+    varlen = arr.length;
+    for(vargap = Math.floor(len / 2); gap > 0; gap = Math.floor(gap / 2)) {
+        // 注意：这里和动图演示的不一样，动图是分组执行，实际操作是多个分组交替执行
+        for(vari = gap; i < len; i++) {
+            varj = i;
+            varcurrent = arr[i];
+            while(j - gap >= 0 && current < arr[j - gap]) {
+                 arr[j] = arr[j - gap];
+                 j = j - gap;
+            }
+            arr[j] = current;
+        }
+    }
+    returnarr;
+}
+
+平均时间复杂度为O(n^1.3)；空间复杂度为O(1)；是不稳定的排序算法。
+
+参考链接：
+https://blog.csdn.net/yuan2019035055/article/details/120246584
+https://blog.csdn.net/daiyudong2020/article/details/52445044
+https://www.cnblogs.com/bonelee/p/12566352.html
