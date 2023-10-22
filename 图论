@@ -1,0 +1,2 @@
+无向图度：关联边数
+有向图度degree = outdegree+indegree = 出度+入度
