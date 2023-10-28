@@ -1,0 +1,6 @@
+最长相同前缀后缀 - next值 - 移动位数
+算法核心：当失配时，i不变，j回退到next[j]的位置并重新比较
+
+参考链接：
+https://www.yuque.com/jinsizongzi/agoug5/agg8ir
+https://blog.csdn.net/v_JULY_v/article/details/7041827
