@@ -1,8 +1,12 @@
-哈夫曼树又称最优二叉树：具有相同节点的树中，加权路径长度最小的二叉树。
-  简单路径长度：从树的根节点到每个节点的路径长度之和。
-  加权路径长度：树中所有带权（非0）叶节点的加权路径长度之和。
-参考链接：https://blog.csdn.net/guoweimelon/article/details/50904321
+哈夫曼树（Huffman Tree）是在叶子结点和权重确定的情况下，带权路径长度最小的二叉树，也被称为最优二叉树。
+  简单路径长度：从树的根节点到每个节点的路径边数之和。
+  节点加权路径长度：树的根结点到该结点的路径长度和该结点权重的乘积。
+  树的带权路径长度WPL：所有叶子结点的带权路径长度之和
+参考链接：
+https://blog.csdn.net/guoweimelon/article/details/50904321
+https://blog.csdn.net/qq_45737068/article/details/106910349
 
 前缀编码：任何一个字符的编码都不是另一个字符编码的前缀
 2014 408 6题
-参考链接：https://blog.csdn.net/qq_30787727/article/details/112210023
+参考链接：
+https://blog.csdn.net/qq_30787727/article/details/112210023
