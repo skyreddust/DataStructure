@@ -28,4 +28,8 @@
 2.链地址法：将所有具有相同哈希地址的记录放在同一单链表中，哈希表的第i个元素存放哈希地址为i的记录组成的单链表的头指针。
 3.建立一个公共溢出区：一旦产生冲突，均把当前记录放入公共溢出区的当前表尾。
 
-参考链接：https://blog.csdn.net/guoweimelon/article/details/50916354
+参考链接：
+https://blog.csdn.net/guoweimelon/article/details/50916354
+https://www.yuque.com/jinsizongzi/agoug5/gca8m5
+
+【例题】408 2018 9
